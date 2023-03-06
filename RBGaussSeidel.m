@@ -15,8 +15,8 @@ for n=1:numit
         for j=1:N,
             jp=j+1-(j==N)*N;
             jm=j-1+(j==1)*N;
-            if ((mod(n,2)==0)&(mod(i+j,2)==0))|((mod(n,2)==1)&(mod(i+j,2)==1)),
-                u(i,j)=(u(ip,j)+u(im,j)+u(i,jp)+u(i,jm)-h^2*f(i,j))/4;
+            if ((mod(n,2)==0)&(mod(i+j,2)==0))|((mod(n,2)==1)&(mod(i+j,2)==1))
+                u(i,j)=(u(ip,j)+u(im,j)+u(i,jp)+u(i,jm)-h^2*f(i,j))/4; 
             end
         end
     end
